@@ -1,5 +1,4 @@
 import { styled } from "../../../styles/themes/default";
-import { transparentize } from "polished";
 
 export const StyledButton = styled("button", {
   all: "unset",
