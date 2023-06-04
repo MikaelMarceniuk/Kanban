@@ -8,5 +8,9 @@
   "private": true,
   "workspaces": [
     "packages/**"
-  ]
+  ],
+  "dependencies": {
+    "@stitches/react": "^1.2.8",
+    "classnames": "^2.3.2"
+  }
 }
