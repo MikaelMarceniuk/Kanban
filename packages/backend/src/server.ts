@@ -2,6 +2,7 @@ import "dotenv/config"
 import express, { Application } from "express"
 import morgan from "morgan"
 import { MongoConn } from "./database"
+import router from "./router"
 
 class Server {
   app: Application
@@ -9,7 +10,7 @@ class Server {
   async initialize() {
     this.app = express()
     this.loadMiddlewares()
-    this.loadRoutes()
+    await this.loadRoutes()
     await this.loadConnections()
   }
 
@@ -19,8 +20,9 @@ class Server {
     this.app.use(express.urlencoded({ extended: true }))
   }
 
-  loadRoutes() {
+  async loadRoutes() {
     this.app.get("/api", (req, res) => res.send({ message: "Hello World!" }))
+    await router(this.app)
   }
 
   async loadConnections() {
