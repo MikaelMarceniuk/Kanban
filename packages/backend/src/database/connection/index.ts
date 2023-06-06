@@ -10,6 +10,7 @@ class MongoConn {
 
     const client = new MongoClient(this.getConnString())
     MongoConn.instance = client.db(process.env.MONGO_DATABASE)
+    return MongoConn.instance
   }
 
   getConnString() {
