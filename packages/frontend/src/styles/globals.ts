@@ -5,9 +5,12 @@ export const globalStyles = globalCss({
     margin: '0',
     padding: '0',
     boxSizing: 'border-box',
-    backgroundColor: '$linesDark'
+    backgroundColor: '$veryDarkGrey',
+    height: "100vh"
   },
-
+  html: {
+    height: "100%",
+  },
   '*': {
     boxSizing: 'border-box'
   }

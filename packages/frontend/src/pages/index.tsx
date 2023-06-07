@@ -1,26 +1,16 @@
 import React from "react";
-import { Button } from "../shared/components/button";
+import { Header } from "../shared/components/header";
+import { Navbar } from "../shared/components/header/navbar";
+import { NavbarProvider } from "../contexts/myContexts";
 
 const Web = () => {
   return (
-    <div
-      style={{
-        padding: "15px",
-        display: "flex",
-        gap: "10px",
-        flexDirection: "row",
-      }}
-    >
-      <Button color="primary" variant="default">
-        Primary
-      </Button>
-      <Button color="secondary" variant="default">
-        Secondary
-      </Button>
-      <Button color="destructive" variant="default">
-        Destructive
-      </Button>
-    </div>
+    <NavbarProvider>
+      <Header />
+      <Navbar >
+        <h1 className="text">poi</h1>
+      </Navbar>
+    </NavbarProvider>
   );
 };
 

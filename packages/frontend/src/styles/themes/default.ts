@@ -13,6 +13,8 @@ export const { theme, getCssText, styled, keyframes, globalCss, css } =
         veryDarkGrey: "#20212C",
         linesDark: "#3E3F4E",
         linesLight: "#E4EBFA",
+        darkGrey: "#2B2C37",
+        mediumGrey: '#828FA3',
 
         lightGrey: "#F4F7FD",
         red: "#EA5555",

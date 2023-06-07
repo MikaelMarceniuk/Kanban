@@ -5,7 +5,7 @@ export const StyledButton = styled("button", {
   outline: "none",
   border: "none",
   height: "38px",
-  padding: "0px 51px",
+  padding: "0px 31px",
   borderRadius: "24px",
   cursor: "pointer",
   userSelect: "none",
